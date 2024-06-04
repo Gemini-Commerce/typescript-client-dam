@@ -12,22 +12,7 @@
  * Do not edit the class manually.
  */
 
-/**
- * 
- * @export
- * @interface DamListAssetsByCodesRequest
- */
-export interface DamListAssetsByCodesRequest {
-    /**
-     * 
-     * @type {string}
-     * @memberof DamListAssetsByCodesRequest
-     */
-    'tenantId': string;
-    /**
-     * 
-     * @type {Array<string>}
-     * @memberof DamListAssetsByCodesRequest
-     */
-    'codes': Array<string>;
-}
+
+export * from "./api";
+export * from "./configuration";
+
