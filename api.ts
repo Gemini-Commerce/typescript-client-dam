@@ -1000,9 +1000,9 @@ export const BasicOperationsApiFp = function(configuration?: Configuration) {
          */
         async batchUploadAssets(body: DamBatchUploadAssetsRequest, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<DamBatchUploadAssetsResponse>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.batchUploadAssets(body, options);
-            const index = configuration?.serverIndex ?? 0;
-            const operationBasePath = operationServerMap['BasicOperationsApi.batchUploadAssets']?.[index]?.url;
-            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, operationBasePath || basePath);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['BasicOperationsApi.batchUploadAssets']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -1013,9 +1013,9 @@ export const BasicOperationsApiFp = function(configuration?: Configuration) {
          */
         async batchUploadAssets_1(body: DamBatchUploadAssetsRequest, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<DamBatchUploadAssetsResponse>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.batchUploadAssets_1(body, options);
-            const index = configuration?.serverIndex ?? 0;
-            const operationBasePath = operationServerMap['BasicOperationsApi.batchUploadAssets_1']?.[index]?.url;
-            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, operationBasePath || basePath);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['BasicOperationsApi.batchUploadAssets_1']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -1026,9 +1026,9 @@ export const BasicOperationsApiFp = function(configuration?: Configuration) {
          */
         async createAsset(body: DamCreateAssetRequest, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<DamAsset>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.createAsset(body, options);
-            const index = configuration?.serverIndex ?? 0;
-            const operationBasePath = operationServerMap['BasicOperationsApi.createAsset']?.[index]?.url;
-            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, operationBasePath || basePath);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['BasicOperationsApi.createAsset']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -1039,9 +1039,9 @@ export const BasicOperationsApiFp = function(configuration?: Configuration) {
          */
         async createAsset_2(body: DamCreateAssetRequest, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<DamAsset>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.createAsset_2(body, options);
-            const index = configuration?.serverIndex ?? 0;
-            const operationBasePath = operationServerMap['BasicOperationsApi.createAsset_2']?.[index]?.url;
-            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, operationBasePath || basePath);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['BasicOperationsApi.createAsset_2']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -1052,9 +1052,9 @@ export const BasicOperationsApiFp = function(configuration?: Configuration) {
          */
         async getAssetByCode(body: DamGetAssetByCodeRequest, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<DamAsset>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getAssetByCode(body, options);
-            const index = configuration?.serverIndex ?? 0;
-            const operationBasePath = operationServerMap['BasicOperationsApi.getAssetByCode']?.[index]?.url;
-            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, operationBasePath || basePath);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['BasicOperationsApi.getAssetByCode']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -1065,9 +1065,9 @@ export const BasicOperationsApiFp = function(configuration?: Configuration) {
          */
         async getAssetByCode_3(body: DamGetAssetByCodeRequest, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<DamAsset>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getAssetByCode_3(body, options);
-            const index = configuration?.serverIndex ?? 0;
-            const operationBasePath = operationServerMap['BasicOperationsApi.getAssetByCode_3']?.[index]?.url;
-            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, operationBasePath || basePath);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['BasicOperationsApi.getAssetByCode_3']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -1078,9 +1078,9 @@ export const BasicOperationsApiFp = function(configuration?: Configuration) {
          */
         async listAssets(body: DamListAssetsRequest, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<DamListAssetsResponse>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.listAssets(body, options);
-            const index = configuration?.serverIndex ?? 0;
-            const operationBasePath = operationServerMap['BasicOperationsApi.listAssets']?.[index]?.url;
-            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, operationBasePath || basePath);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['BasicOperationsApi.listAssets']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -1091,9 +1091,9 @@ export const BasicOperationsApiFp = function(configuration?: Configuration) {
          */
         async listAssetsByCodes(body: DamListAssetsByCodesRequest, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<DamListAssetsByCodesResponse>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.listAssetsByCodes(body, options);
-            const index = configuration?.serverIndex ?? 0;
-            const operationBasePath = operationServerMap['BasicOperationsApi.listAssetsByCodes']?.[index]?.url;
-            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, operationBasePath || basePath);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['BasicOperationsApi.listAssetsByCodes']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -1104,9 +1104,9 @@ export const BasicOperationsApiFp = function(configuration?: Configuration) {
          */
         async listAssetsByCodes_4(body: DamListAssetsByCodesRequest, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<DamListAssetsByCodesResponse>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.listAssetsByCodes_4(body, options);
-            const index = configuration?.serverIndex ?? 0;
-            const operationBasePath = operationServerMap['BasicOperationsApi.listAssetsByCodes_4']?.[index]?.url;
-            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, operationBasePath || basePath);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['BasicOperationsApi.listAssetsByCodes_4']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -1117,9 +1117,9 @@ export const BasicOperationsApiFp = function(configuration?: Configuration) {
          */
         async listAssetsByIds(body: DamListAssetsByIdsRequest, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<DamListAssetsByIdsResponse>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.listAssetsByIds(body, options);
-            const index = configuration?.serverIndex ?? 0;
-            const operationBasePath = operationServerMap['BasicOperationsApi.listAssetsByIds']?.[index]?.url;
-            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, operationBasePath || basePath);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['BasicOperationsApi.listAssetsByIds']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -1130,9 +1130,9 @@ export const BasicOperationsApiFp = function(configuration?: Configuration) {
          */
         async listAssetsByIds_5(body: DamListAssetsByIdsRequest, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<DamListAssetsByIdsResponse>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.listAssetsByIds_5(body, options);
-            const index = configuration?.serverIndex ?? 0;
-            const operationBasePath = operationServerMap['BasicOperationsApi.listAssetsByIds_5']?.[index]?.url;
-            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, operationBasePath || basePath);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['BasicOperationsApi.listAssetsByIds_5']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -1143,9 +1143,9 @@ export const BasicOperationsApiFp = function(configuration?: Configuration) {
          */
         async listAssets_6(body: DamListAssetsRequest, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<DamListAssetsResponse>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.listAssets_6(body, options);
-            const index = configuration?.serverIndex ?? 0;
-            const operationBasePath = operationServerMap['BasicOperationsApi.listAssets_6']?.[index]?.url;
-            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, operationBasePath || basePath);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['BasicOperationsApi.listAssets_6']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -1156,9 +1156,9 @@ export const BasicOperationsApiFp = function(configuration?: Configuration) {
          */
         async updateAsset(body: DamUpdateAssetRequest, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<DamAsset>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.updateAsset(body, options);
-            const index = configuration?.serverIndex ?? 0;
-            const operationBasePath = operationServerMap['BasicOperationsApi.updateAsset']?.[index]?.url;
-            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, operationBasePath || basePath);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['BasicOperationsApi.updateAsset']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -1169,9 +1169,9 @@ export const BasicOperationsApiFp = function(configuration?: Configuration) {
          */
         async updateAsset_7(body: DamUpdateAssetRequest, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<DamAsset>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.updateAsset_7(body, options);
-            const index = configuration?.serverIndex ?? 0;
-            const operationBasePath = operationServerMap['BasicOperationsApi.updateAsset_7']?.[index]?.url;
-            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, operationBasePath || basePath);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['BasicOperationsApi.updateAsset_7']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
     }
 };
@@ -1190,7 +1190,7 @@ export const BasicOperationsApiFactory = function (configuration?: Configuration
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        batchUploadAssets(body: DamBatchUploadAssetsRequest, options?: any): AxiosPromise<DamBatchUploadAssetsResponse> {
+        batchUploadAssets(body: DamBatchUploadAssetsRequest, options?: RawAxiosRequestConfig): AxiosPromise<DamBatchUploadAssetsResponse> {
             return localVarFp.batchUploadAssets(body, options).then((request) => request(axios, basePath));
         },
         /**
@@ -1200,7 +1200,7 @@ export const BasicOperationsApiFactory = function (configuration?: Configuration
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        batchUploadAssets_1(body: DamBatchUploadAssetsRequest, options?: any): AxiosPromise<DamBatchUploadAssetsResponse> {
+        batchUploadAssets_1(body: DamBatchUploadAssetsRequest, options?: RawAxiosRequestConfig): AxiosPromise<DamBatchUploadAssetsResponse> {
             return localVarFp.batchUploadAssets_1(body, options).then((request) => request(axios, basePath));
         },
         /**
@@ -1210,7 +1210,7 @@ export const BasicOperationsApiFactory = function (configuration?: Configuration
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        createAsset(body: DamCreateAssetRequest, options?: any): AxiosPromise<DamAsset> {
+        createAsset(body: DamCreateAssetRequest, options?: RawAxiosRequestConfig): AxiosPromise<DamAsset> {
             return localVarFp.createAsset(body, options).then((request) => request(axios, basePath));
         },
         /**
@@ -1220,7 +1220,7 @@ export const BasicOperationsApiFactory = function (configuration?: Configuration
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        createAsset_2(body: DamCreateAssetRequest, options?: any): AxiosPromise<DamAsset> {
+        createAsset_2(body: DamCreateAssetRequest, options?: RawAxiosRequestConfig): AxiosPromise<DamAsset> {
             return localVarFp.createAsset_2(body, options).then((request) => request(axios, basePath));
         },
         /**
@@ -1230,7 +1230,7 @@ export const BasicOperationsApiFactory = function (configuration?: Configuration
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getAssetByCode(body: DamGetAssetByCodeRequest, options?: any): AxiosPromise<DamAsset> {
+        getAssetByCode(body: DamGetAssetByCodeRequest, options?: RawAxiosRequestConfig): AxiosPromise<DamAsset> {
             return localVarFp.getAssetByCode(body, options).then((request) => request(axios, basePath));
         },
         /**
@@ -1240,7 +1240,7 @@ export const BasicOperationsApiFactory = function (configuration?: Configuration
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getAssetByCode_3(body: DamGetAssetByCodeRequest, options?: any): AxiosPromise<DamAsset> {
+        getAssetByCode_3(body: DamGetAssetByCodeRequest, options?: RawAxiosRequestConfig): AxiosPromise<DamAsset> {
             return localVarFp.getAssetByCode_3(body, options).then((request) => request(axios, basePath));
         },
         /**
@@ -1250,7 +1250,7 @@ export const BasicOperationsApiFactory = function (configuration?: Configuration
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        listAssets(body: DamListAssetsRequest, options?: any): AxiosPromise<DamListAssetsResponse> {
+        listAssets(body: DamListAssetsRequest, options?: RawAxiosRequestConfig): AxiosPromise<DamListAssetsResponse> {
             return localVarFp.listAssets(body, options).then((request) => request(axios, basePath));
         },
         /**
@@ -1260,7 +1260,7 @@ export const BasicOperationsApiFactory = function (configuration?: Configuration
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        listAssetsByCodes(body: DamListAssetsByCodesRequest, options?: any): AxiosPromise<DamListAssetsByCodesResponse> {
+        listAssetsByCodes(body: DamListAssetsByCodesRequest, options?: RawAxiosRequestConfig): AxiosPromise<DamListAssetsByCodesResponse> {
             return localVarFp.listAssetsByCodes(body, options).then((request) => request(axios, basePath));
         },
         /**
@@ -1270,7 +1270,7 @@ export const BasicOperationsApiFactory = function (configuration?: Configuration
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        listAssetsByCodes_4(body: DamListAssetsByCodesRequest, options?: any): AxiosPromise<DamListAssetsByCodesResponse> {
+        listAssetsByCodes_4(body: DamListAssetsByCodesRequest, options?: RawAxiosRequestConfig): AxiosPromise<DamListAssetsByCodesResponse> {
             return localVarFp.listAssetsByCodes_4(body, options).then((request) => request(axios, basePath));
         },
         /**
@@ -1280,7 +1280,7 @@ export const BasicOperationsApiFactory = function (configuration?: Configuration
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        listAssetsByIds(body: DamListAssetsByIdsRequest, options?: any): AxiosPromise<DamListAssetsByIdsResponse> {
+        listAssetsByIds(body: DamListAssetsByIdsRequest, options?: RawAxiosRequestConfig): AxiosPromise<DamListAssetsByIdsResponse> {
             return localVarFp.listAssetsByIds(body, options).then((request) => request(axios, basePath));
         },
         /**
@@ -1290,7 +1290,7 @@ export const BasicOperationsApiFactory = function (configuration?: Configuration
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        listAssetsByIds_5(body: DamListAssetsByIdsRequest, options?: any): AxiosPromise<DamListAssetsByIdsResponse> {
+        listAssetsByIds_5(body: DamListAssetsByIdsRequest, options?: RawAxiosRequestConfig): AxiosPromise<DamListAssetsByIdsResponse> {
             return localVarFp.listAssetsByIds_5(body, options).then((request) => request(axios, basePath));
         },
         /**
@@ -1300,7 +1300,7 @@ export const BasicOperationsApiFactory = function (configuration?: Configuration
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        listAssets_6(body: DamListAssetsRequest, options?: any): AxiosPromise<DamListAssetsResponse> {
+        listAssets_6(body: DamListAssetsRequest, options?: RawAxiosRequestConfig): AxiosPromise<DamListAssetsResponse> {
             return localVarFp.listAssets_6(body, options).then((request) => request(axios, basePath));
         },
         /**
@@ -1310,7 +1310,7 @@ export const BasicOperationsApiFactory = function (configuration?: Configuration
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        updateAsset(body: DamUpdateAssetRequest, options?: any): AxiosPromise<DamAsset> {
+        updateAsset(body: DamUpdateAssetRequest, options?: RawAxiosRequestConfig): AxiosPromise<DamAsset> {
             return localVarFp.updateAsset(body, options).then((request) => request(axios, basePath));
         },
         /**
@@ -1320,7 +1320,7 @@ export const BasicOperationsApiFactory = function (configuration?: Configuration
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        updateAsset_7(body: DamUpdateAssetRequest, options?: any): AxiosPromise<DamAsset> {
+        updateAsset_7(body: DamUpdateAssetRequest, options?: RawAxiosRequestConfig): AxiosPromise<DamAsset> {
             return localVarFp.updateAsset_7(body, options).then((request) => request(axios, basePath));
         },
     };
